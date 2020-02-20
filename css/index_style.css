@@ -44,6 +44,8 @@ header #date i {
 [ NAV ]
 ***************/
 
+
+
 #realnav {
     position: absolute;
     z-index: 9999999;
@@ -74,6 +76,7 @@ header #date i {
 }
 
 
+
 /***************
 [ END NAV ]
 ***************/
@@ -82,7 +85,6 @@ header #date i {
 /***************
 [ BELOW NAV ]
 ***************/
-
 #below-nav-inner {
     text-align: center;
     color: white;
@@ -120,8 +122,6 @@ header .showSlide {
 }
 
 header .slidercontainer {
-    max-width: 1000px;
-    position: relative;
     margin: auto;
 }
 
@@ -129,7 +129,7 @@ header .left,
 header .right {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 65%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -141,10 +141,13 @@ header .right {
 }
 
 header .right {
-    right: 0;
+    right: 100px;
     border-radius: 3px 0 0 3px;
 }
-
+header .left {
+    left: 100px;
+    border-radius: 3px 0 0 3px;
+}
 header.left:hover,
 header.right:hover {
     background-color: rgba(115, 115, 115, 0.8);
@@ -154,7 +157,7 @@ header.active {
     background-color: #717171;
 }
 
-
+header.showSlide{position: relative;}
 /* Fading animation */
 
 header.fade {
@@ -163,7 +166,9 @@ header.fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
+header .slidercontainer i{
+font-size: 20px;
+}
 
 /***************
 [ END BELOW NAV ]
@@ -379,3 +384,99 @@ header.fade {
 /***************
 [ END فروعنا ]
 ***************/
+/***************
+[ فيديوهات و صور ]
+***************/
+#videos_Imgs a
+{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Droid Arabic Kufi";
+    font-weight: bold;
+    text-align: center;
+    background-color: #CC8E0F;
+}
+#videos_Imgs i
+{
+    font-size: 25px;
+    text-align: center;
+}
+#imgSec h1
+{
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
+#imgSec h5
+{
+    background-color: #021E3C;
+    font-size: 16px;
+    line-height: 35px;
+    color: #ffffff;     
+    font-family: "Droid Arabic Kufi";
+    text-align: center;
+}
+.secImaboveBtn
+{
+    position: relative;
+}
+#videos_Imgs a
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+/***************
+[ END فيديوهات و صور ]
+***************/
+
+/***************
+[ فيديوهات و صور ]
+***************/
+#videos_Imgs a
+{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Droid Arabic Kufi";
+    font-weight: bold;
+    text-align: center;
+    background-color: #CC8E0F;
+}
+#videos_Imgs i
+{
+    font-size: 25px;
+    text-align: center;
+}
+#imgSec h1
+{
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
+#imgSec h5
+{
+    background-color: #021E3C;
+    font-size: 16px;
+    line-height: 35px;
+    color: #ffffff;     
+    font-family: "Droid Arabic Kufi";
+    text-align: center;
+}
+.secImaboveBtn
+{
+    position: relative;
+}
+#videos_Imgs a
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+/***************
+[ END فيديوهات و صور ]
+***************/
+
