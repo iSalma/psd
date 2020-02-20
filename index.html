@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <header>
+     <!--HEADER-------------------------------------------------->
+   <header>
         <!--ABOVE NAV-------------------------------------------------->
         <div id="above-nav" class="mt-4">
             <div class="container d-flex justify-content-between py-4">
@@ -53,19 +54,35 @@
         </div>
         <!--END ABOVE NAV-->
         <!--BELOW NAV(SLIDER)-->
-        <div id="below-nav-inner">
-            <div class="imgtry d-flex justify-content-center align-items-center ">
-                <div class="title ">
-                    <h1>شركة المنهاج</h1>
-                    <h2>لخدمات الحجاج و المعتمرين</h2>
+        <div class="slidercontainer" id="below-nav-inner">  
+            <div class="showSlide"> 
+                <div class="imgtry d-flex justify-content-center align-items-center ">
+                    <div class="title ">
+                        <h1>شركة المنهاج</h1>
+                        <h2>لخدمات الحجاج و المعتمرين</h2>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="showSlide">  
+                <div>
+                    <div class="imgtry d-flex justify-content-center align-items-center ">
+                        <div class="title ">
+                            <h1>2شركة المنهاج</h1>
+                            <h2>2لخدمات الحجاج و المعتمرين</h2>
+                        </div>
+                    </div>
+        
                 </div>
             </div>
-
-        </div>
+            <i class="left fas fa-angle-left"onclick="nextSlide(-1)"></i>  
+            <i class="right fas fa-angle-right" onclick="nextSlide(1)"></i>  
+            <!-- Navigation arrows -->  
+        </div>  
         <!--END BELOW NAV--------------------------------------------------------------->
     </header>
-
-
+     <!--END HEADER-------------------------------------------------->
+    
     <!-- لماذا تفضل -------------------------------------------------------------------->
     <section id="whyUS" class="py-5">
         <div class="whyUsTitle">
@@ -103,7 +120,7 @@
     <!--END  لماذا تفضل ---------------------------------------------------------------->
 
     <!--خدماتنا------------------------------------------------------------------------->
-    <section id="ourServices " class="py-3 text-center ">
+     <section id="ourServices" class="py-3 text-center">
         <h1 class="pt-2 pb-3 ">خدماتنا</h1>
         <div class="container ">
             <div class="w-80 m-auto row justify-content-around ">
@@ -311,7 +328,62 @@
         </div>
     </section>
     <!--END  فروعنا ---------------------------------------------------------------->
-
+<!-- صور و فيديوهات ---------------------------------------------------------------->
+    <section id="videos_Imgs" class="container py-5">
+        <div class="row justify-content-around">
+            <div class="col-md-6">
+                <div id="imgSec" class="px-3">
+                    <div class="row py-0 my-0">
+                        <div class="col-md-6 p-0 border-white ">
+                            <div class="px-1">
+                                <img class="img-fluid" src="images/i1.png ">
+                                <div class="p-0">
+                                    <h5 class="py-2 ">عنوان الصورة يوضع هنا</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-0 border-white ">
+                            <div class="px-1">
+                                <img class="img-fluid" src="images/service2.png ">
+                                <div class="p-0 ">
+                                    <h5 class="py-2 ">عنوان الصورة يوضع هنا</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 p-0 border-white">
+                            <div class="px-1">
+                                <img class="img-fluid" src="images/img14.png">
+                                <div class="p-0 pb-1 secImaboveBtn">
+                                    <h5 class="py-2 ">عنوان الصورة يوضع هنا</h5>
+                                    <a class="px-3 py-1"><i class="far fa-file-image pr-3"></i> المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-0 border-white">
+                            <div class="px-1">
+                                <img class="img-fluid" src="images/img22.png ">
+                                <div class="p-0">
+                                    <h5 class="py-2">عنوان الصورة يوضع هنا</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <div id="videoSec" class="h-100 px-3">
+                    <div class="secImaboveBtn">
+                        <video controls src="images/huwai.mp4" class="h-100 pb-2"autoplay="true" muted="true" loop="true">
+                        </video>
+                        <a class="px-3 py-1"><i class="icofont-video-alt pr-3"></i> المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END صور و فيديوهات ---------------------------------------------------------------->
 
 
     <script src="js/jquery-3.4.1.min.js "></script>
