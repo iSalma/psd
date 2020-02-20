@@ -11,7 +11,7 @@ header #above-nav {
     background-image: url('../images/grey_bg.png');
     font-size: 13px;
     color: #20222C;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Cairo';
     position: relative;
 }
 
@@ -207,14 +207,21 @@ header.fade {
     font-family: "Cairo";
     font-weight: 400;
     text-align: center;
+    padding-bottom: 70px;
 }
 
 #whyUs .whyUsContainer .icon {
     font-size: 50px;
     line-height: 14px;
-    color: rgb(1, 68, 137);
-    text-align: center;
+    background-color: rgb(1, 68, 137);
     width: 100%;
+}
+
+#whyUs .whyUsContainer i {
+    margin: auto;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
 }
 
 #whyUs .whyUsContainer .title {
@@ -223,6 +230,7 @@ header.fade {
     font-family: "Cairo";
     font-weight: 700;
     text-align: center;
+    padding-top: 30px;
 }
 
 #whyUs .whyUsContainer .parag {
@@ -334,7 +342,37 @@ header.fade {
     color: #ffffff;
     font-family: "Cairo";
     font-weight: 400;
-    width: 50%;
+    width: 90%;
+    margin-top: -10px;
+}
+
+#ourBranches .carousel-indicators {
+    margin: -10px;
+}
+
+#ourBranches .carousel-indicators li {
+    background-color: yellow;
+    width: 67px;
+}
+
+#ourBranches .carousel-indicators .active {
+    background-color: white;
+    width: 67px;
+}
+
+#ourBranches .carousel-item-next.carousel-item-left,
+#ourBranches .carousel-item-prev.carousel-item-right {
+    transform: translate3d(0, 0, 0) !important;
+}
+
+#ourBranches .carousel-item-next,
+#ourBranches .active.carousel-item-right {
+    transform: translate3d(0, -100%, 0) !important;
+}
+
+#ourBranches .carousel-item-prev,
+#ourBranches .active.carousel-item-left {
+    transform: translate3d(0, +100, 0) !important;
 }
 
 
