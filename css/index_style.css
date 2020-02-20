@@ -373,12 +373,12 @@ font-size: 20px;
 
 #ourBranches .carousel-item-next,
 #ourBranches .active.carousel-item-right {
-    transform: translate3d(0, -100%, 0) !important;
+    transform: translate3d(-100, -100%, 0) !important;
 }
 
 #ourBranches .carousel-item-prev,
 #ourBranches .active.carousel-item-left {
-    transform: translate3d(0, +100, 0) !important;
+    transform: translate3d(100, +100, 0) !important;
 }
 
 
