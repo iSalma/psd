@@ -272,6 +272,7 @@ font-size: 20px;
 }
 
 #ourServices h1 {
+    background-color: yellow;
     font-size: 30px;
     color: #000000;
     font-family: 'Cairo', sans-serif;
@@ -302,6 +303,7 @@ font-size: 20px;
     height: 400px;
     direction: rtl;
     text-align: right;
+    overflow: hidden;
 }
 
 
