@@ -1,513 +1,528 @@
-/***************
+        /***************
 [ HEADER ]
 ***************/
-
-@font-face {
-    font-family: "Droid Arabic Kufi";
-    src: url("../fonts/DroidKufi-Regular.ttf");
-}
-
-
-/***************
+        
+        @font-face {
+            font-family: "Droid Arabic Kufi";
+            src: url("../fonts/DroidKufi-Regular.ttf");
+        }
+        /***************
 [ ABOVE NAV ]
 ***************/
-
-header #above-nav {
-    background-image: url('../images/grey_bg.png');
-    font-size: 13px;
-    color: #20222C;
-    font-family: 'Cairo';
-    position: relative;
-}
-
-header #above-nav button {
-    font-weight: 700;
-}
-
-header #above-nav p,
-header #above-nav feImage {
-    font-weight: 400;
-}
-
-header #above-nav button {
-    background-color: #F7F8FA;
-}
-
-header #date p,
-header #date i {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-
-/***************
+        
+        header #above-nav {
+            background-image: url('../images/grey_bg.png');
+            font-size: 13px;
+            color: #20222C;
+            font-family: 'Cairo';
+            position: relative;
+        }
+        
+        header #above-nav button {
+            font-weight: 700;
+        }
+        
+        header #above-nav p,
+        header #above-nav feImage {
+            font-weight: 400;
+        }
+        
+        header #above-nav button {
+            background-color: #F7F8FA;
+        }
+        
+        header #date p,
+        header #date i {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        /***************
 [  END ABOVE NAV ]
 ***************/
-
-
-/***************
+        /***************
 [ NAV ]
 ***************/
-
-#realnav {
-    position: absolute;
-    z-index: 9999999;
-    left: 7.5%;
-    bottom: -25%;
-    width: 85%;
-    margin: 0 auto;
-}
-
-.navbar-nav {
-    margin-left: auto;
-    flex-direction: row-reverse !important;
-    background-image: linear-gradient(rgb(0, 77, 156), rgb(0, 64, 129));
-    width: 100%;
-    border-top: solid 5px #FFEE0D;
-}
-
-.nav-link {
-    font-size: 15px;
-    color: #ffffff;
-    font-family: "Cairo";
-    font-weight: 400;
-    transition: color 0s;
-}
-
-.nav-link:hover {
-    color: rgb(2, 55, 109);
-}
-
-
-/***************
+        
+        #realnav {
+            position: absolute;
+            z-index: 9999999;
+            left: 7.5%;
+            bottom: -25%;
+            width: 85%;
+            margin: 0 auto;
+        }
+        
+        .navbar-nav {
+            margin-left: auto;
+            flex-direction: row-reverse !important;
+            background-image: linear-gradient(rgb(0, 77, 156), rgb(0, 64, 129));
+            width: 100%;
+            border-top: solid 5px #FFEE0D;
+        }
+        
+        .nav-link {
+            font-size: 15px;
+            color: #ffffff;
+            font-family: "Cairo";
+            font-weight: 400;
+            transition: color 0s;
+        }
+        
+        .nav-link:hover {
+            color: rgb(2, 55, 109);
+        }
+        /***************
 [ END NAV ]
 ***************/
-
-
-/***************
+        /***************
 [ BELOW NAV ]
 ***************/
-
-#below-nav-inner {
-    text-align: center;
-    color: white;
-    font-family: "Droid Arabic Kufi";
-    background-image: url('../images/headK3ba11.png');
-    background-size: 100% 100%;
-    height: 600px;
-}
-
-#below-nav-inner .imgtry {
-    background-image: url('../images/headK3ba2.png');
-    background-size: 100% 100%;
-    height: 600px;
-    width: 100%;
-}
-
-#below-nav-inner h1 {
-    font-size: 48px;
-    filter: drop-shadow(0.5px 0.866px 0px #000000);
-    font-weight: bold;
-}
-
-#below-nav-inner h2 {
-    font-size: 26px;
-    filter: drop-shadow(0.5px 0.866px 0px #000000);
-    font-weight: bold;
-}
-
-header .showSlide {
-    display: none
-}
-
-.showSlide img {
-    width: 100%;
-}
-
-header .slidercontainer {
-    margin: auto;
-}
-
-header .left,
-header .right {
-    cursor: pointer;
-    position: absolute;
-    top: 65%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-header .right {
-    right: 100px;
-    border-radius: 3px 0 0 3px;
-}
-
-header .left {
-    left: 100px;
-    border-radius: 3px 0 0 3px;
-}
-
-header.left:hover,
-header.right:hover {
-    background-color: rgba(115, 115, 115, 0.8);
-}
-
-header.active {
-    background-color: #717171;
-}
-
-header.showSlide {
-    position: relative;
-}
-
-
-/* Fading animation */
-
-header.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-header .slidercontainer i {
-    font-size: 20px;
-}
-
-
-/***************
+        
+        #below-nav-inner {
+            text-align: center;
+            color: white;
+            font-family: "Droid Arabic Kufi";
+            background-image: url('../images/headK3ba11.png');
+            background-size: 100% 100%;
+            height: 600px;
+        }
+        
+        #below-nav-inner .imgtry {
+            background-image: url('../images/headK3ba2.png');
+            background-size: 100% 100%;
+            height: 600px;
+            width: 100%;
+        }
+        
+        #below-nav-inner h1 {
+            font-size: 48px;
+            filter: drop-shadow(0.5px 0.866px 0px #000000);
+            font-weight: bold;
+        }
+        
+        #below-nav-inner h2 {
+            font-size: 26px;
+            filter: drop-shadow(0.5px 0.866px 0px #000000);
+            font-weight: bold;
+        }
+        
+        header .showSlide {
+            display: none
+        }
+        
+        .showSlide img {
+            width: 100%;
+        }
+        
+        header .slidercontainer {
+            margin: auto;
+        }
+        
+        header .left,
+        header .right {
+            cursor: pointer;
+            position: absolute;
+            top: 65%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        
+        header .right {
+            right: 100px;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        header .left {
+            left: 100px;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        header.left:hover,
+        header.right:hover {
+            background-color: rgba(115, 115, 115, 0.8);
+        }
+        
+        header.active {
+            background-color: #717171;
+        }
+        
+        header.showSlide {
+            position: relative;
+        }
+        /* Fading animation */
+        
+        header.fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        header .slidercontainer i {
+            font-size: 20px;
+        }
+        /***************
 [ END BELOW NAV ]
 ***************/
-
-
-/***************
+        /***************
 [ END HEADER ]
 ***************/
-
-
-/***************
+        /***************
 [ لماذا تفضل ]
 ***************/
+        
+        #whyUs {
+            background-image: url('../images/Rectangle5.png');
+            background-size: 100% 100%;
+            height: 400px;
+            direction: rtl;
+        }
+        
+        #whyUs .whyUsTitle .divP2 {
+            width: 35%;
+            margin: auto;
+        }
+        
+        #whyUs .whyUsTitle .p1 {
+            font-size: 22px;
+            color: #000000;
+            font-family: "Cairo";
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        #whyUs .whyUsTitle .p2 {
+            height: 48px;
+            font-size: 13px;
+            line-height: 24px;
+            color: #000000;
+            font-family: "Cairo";
+            font-weight: 400;
+            text-align: center;
+            padding-bottom: 70px;
+        }
+        
+        #whyUs .whyUsContainer .icon {
+            font-size: 50px;
+            line-height: 14px;
+            background-color: rgb(1, 68, 137);
+            width: 100%;
+        }
+        
+        #whyUs .whyUsContainer i {
+            margin: auto;
+            border-radius: 50%;
+            padding: 10px;
+            color: white;
+        }
+        
+        #whyUs .whyUsContainer .title {
+            font-size: 22px;
+            color: #000000;
+            font-family: "Cairo";
+            font-weight: 700;
+            text-align: center;
+            padding-top: 30px;
+        }
+        
+        #whyUs .whyUsContainer .parag {
+            height: 30px;
+            font-size: 13px;
+            color: #000000;
+            font-family: "Cairo";
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 850px) {
+            #whyUs {
+                height: auto;
+            }
+            #whyUs .whyUsTitle .divP2 {
+                width: 90%;
+                margin: auto;
+            }
+            #whyUs .whyUsTitle .p2 {
+                padding-bottom: 80px;
+            }
+            #whyUs .whyUsContainer .parag {
+                padding-bottom: 70px;
 
-#whyUs {
-    background-image: url('../images/Rectangle5.png');
-    background-size: 100% 100%;
-    height: 400px;
-    direction: rtl;
-}
+            }
+        }
 
-#whyUs .whyUsTitle .divP2 {
-    width: 35%;
-    margin: auto;
-}
+        @media screen and (max-width: 680px) {
+            #whyUs {
+                height: auto;
+            }
+            #whyUs .whyUsTitle .divP2 {
+                width: 90%;
+                margin: auto;
+            }
+            #whyUs .whyUsTitle .p2 {
+                padding-bottom: 100px;
+            }
+            #whyUs .whyUsContainer .parag {
+                padding-bottom: 100px;
 
-#whyUs .whyUsTitle .p1 {
-    font-size: 22px;
-    color: #000000;
-    font-family: "Cairo";
-    font-weight: 700;
-    text-align: center;
-}
+            }
+        }
+        @media screen and (max-width: 530px) {
+            #whyUs {
+                height: auto;
+                background-color: red;
+            }
+            #whyUs .whyUsTitle .divP2 {
+                width: 90%;
+                margin: auto;
+            }
+            #whyUs .whyUsTitle .p2 {
+                padding-bottom: 120px;
+            }
+            #whyUs .whyUsContainer .parag {
+                padding-bottom: 100px;
 
-#whyUs .whyUsTitle .p2 {
-    height: 48px;
-    font-size: 13px;
-    line-height: 24px;
-    color: #000000;
-    font-family: "Cairo";
-    font-weight: 400;
-    text-align: center;
-    padding-bottom: 70px;
-}
-
-#whyUs .whyUsContainer .icon {
-    font-size: 50px;
-    line-height: 14px;
-    background-color: rgb(1, 68, 137);
-    width: 100%;
-}
-
-#whyUs .whyUsContainer i {
-    margin: auto;
-    border-radius: 50%;
-    padding: 10px;
-    color: white;
-}
-
-#whyUs .whyUsContainer .title {
-    font-size: 22px;
-    color: #000000;
-    font-family: "Cairo";
-    font-weight: 700;
-    text-align: center;
-    padding-top: 30px;
-}
-
-#whyUs .whyUsContainer .parag {
-    height: 30px;
-    font-size: 13px;
-    color: #000000;
-    font-family: "Cairo";
-    font-weight: 400;
-    text-align: center;
-}
-
+            }
+        }
 
 /***************
 [ END لماذا تفضل ]
 ***************/
 
-
 /***************
 [ خدماتنا ]
 ***************/
-
-#ourServices {}
-
-#ourServices .card-img-top img {
-    height: 283px;
-    width: 567px;
-}
-
-#ourServices .card .card-body {
-    background-color: rgb(4, 32, 61);
-    height: 50px;
-}
-
-#ourServices h1 {
-    font-size: 30px;
-    color: #000000;
-    font-family: 'Cairo', sans-serif;
-    font-weight: 600;
-}
-
-#ourServices h5 {
-    background-color: #021E3C;
-    font-size: 16px;
-    line-height: 35px;
-    color: #ffffff;
-    font-family: "Droid Arabic Kufi";
-}
-
-
-/***************
+        
+        #ourServices {}
+        
+        #ourServices .card-img-top img {
+            height: 283px;
+            width: 567px;
+        }
+        
+        #ourServices .card .card-body {
+            background-color: rgb(4, 32, 61);
+            height: 50px;
+        }
+        
+        #ourServices h1 {
+            font-size: 30px;
+            color: #000000;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 600;
+        }
+        
+        #ourServices h5 {
+            background-color: #021E3C;
+            font-size: 16px;
+            line-height: 35px;
+            color: #ffffff;
+            font-family: "Droid Arabic Kufi";
+        }
+        /***************
 [ END خدماتنا ]
 ***************/
-
-
-/***************
+        /***************
 [ فروعنا ]
 ***************/
-
-#ourBranches {
-    background-image: url('../images/Group95.png');
-    background-size: 100% 100%;
-    height: 400px;
-    direction: rtl;
-    text-align: right;
-    overflow: hidden;
-}
-
-
-/* #ourBranches .imgLayer {
+        
+        #ourBranches {
+            background-image: linear-gradient(rgba(55, 54, 110, 0.1), rgba(55, 54, 110, 0.1)), url('../images/Group95.png');
+            background-size: 100% 100%;
+            height: 400px;
+            direction: rtl;
+            text-align: right;
+            overflow: hidden;
+        }
+        /* #ourBranches .imgLayer {
     background-image: url('../images/Group95.png');
     background-size: 100% 100%;
     height: 400px;
     direction: rtl;
     text-align: right;
 } */
-
-#ourBranches .ourBranchesTitle .divP2 {
-    width: 35%;
-    margin: auto;
-}
-
-#ourBranches .ourBranchesTitle .p1 {
-    font-size: 40px;
-    color: #ffffff;
-    font-family: "Cairo";
-    font-weight: 700;
-    text-align: center;
-}
-
-#ourBranches .ourBranchesTitle .p2 {
-    font-size: 14px;
-    color: #ffffff;
-    font-family: "Cairo";
-    font-weight: 400;
-    text-align: center;
-}
-
-#ourBranches .ourBranchesContainer img {
-    border-radius: 10px;
-    height: 129px;
-    width: 177px;
-}
-
-#ourBranches .ourBranchesContainer .parag {
-    font-size: 14px;
-    line-height: 24px;
-    color: #ffffff;
-    font-family: "Cairo";
-    font-weight: 400;
-    width: 90%;
-    margin-top: -10px;
-}
-
-#ourBranches .carousel-indicators {
-    margin: -10px;
-}
-
-#ourBranches .carousel-indicators li {
-    background-color: yellow;
-    width: 67px;
-}
-
-#ourBranches .carousel-indicators .active {
-    background-color: white;
-    width: 67px;
-}
-
-#ourBranches .carousel-item-next.carousel-item-left,
-#ourBranches .carousel-item-prev.carousel-item-right {
-    transform: translate3d(0, 0, 0) !important;
-}
-
-#ourBranches .carousel-item-next,
-#ourBranches .active.carousel-item-right {
-    transform: translate3d(-100, -100%, 0) !important;
-}
-
-#ourBranches .carousel-item-prev,
-#ourBranches .active.carousel-item-left {
-    transform: translate3d(100, +100, 0) !important;
-}
-
-@media screen and (max-width: 1000px) {
-    #ourBranches {
-        height: auto;
-    }
-    #ourBranches .ourBranchesInfo {
-        padding: 30px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    #ourBranches {
-        height: auto;
-    }
-    #ourBranches .ourBranchesInfo {
-        padding-bottom: 30px;
-    }
-}
-
-
-/***************
+        
+        #ourBranches .ourBranchesTitle .divP2 {
+            width: 35%;
+            margin: auto;
+        }
+        
+        #ourBranches .ourBranchesTitle .p1 {
+            font-size: 40px;
+            color: #ffffff;
+            font-family: "Cairo";
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        #ourBranches .ourBranchesTitle .p2 {
+            font-size: 14px;
+            color: #ffffff;
+            font-family: "Cairo";
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        #ourBranches .ourBranchesContainer img {
+            border-radius: 10px;
+            height: 129px;
+            width: 177px;
+        }
+        
+        #ourBranches .ourBranchesContainer .parag {
+            font-size: 14px;
+            line-height: 24px;
+            color: #ffffff;
+            font-family: "Cairo";
+            font-weight: 400;
+            width: 90%;
+            margin-top: -10px;
+        }
+        
+        #ourBranches .carousel-indicators {
+            margin: -10px;
+        }
+        
+        #ourBranches .carousel-indicators li {
+            background-color: yellow;
+            width: 67px;
+        }
+        
+        #ourBranches .carousel-indicators .active {
+            background-color: white;
+            width: 67px;
+        }
+        
+        #ourBranches .carousel-item-next.carousel-item-left,
+        #ourBranches .carousel-item-prev.carousel-item-right {
+            transform: translate3d(0, 0, 0) !important;
+        }
+        
+        #ourBranches .carousel-item-next,
+        #ourBranches .active.carousel-item-right {
+            transform: translate3d(-100, -100%, 0) !important;
+        }
+        
+        #ourBranches .carousel-item-prev,
+        #ourBranches .active.carousel-item-left {
+            transform: translate3d(100, +100, 0) !important;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            #ourBranches {
+                height: auto;
+            }
+            #ourBranches .ourBranchesInfo {
+                padding-bottom: 30px;
+            }
+        }
+        
+        @media screen and (min-width: 1000px) {
+            #ourBranches {
+                height: auto;
+            }
+            #ourBranches .ourBranchesInfo {
+                padding-bottom: 30px;
+            }
+        }
+        /***************
 [ END فروعنا ]
 ***************/
-
-
-/***************
+        /***************
 [ فيديوهات و صور ]
 ***************/
-
-#videos_Imgs a {
-    font-size: 20px;
-    color: #ffffff;
-    font-family: "Droid Arabic Kufi";
-    font-weight: bold;
-    text-align: center;
-    background-color: #CC8E0F;
-}
-
-#videos_Imgs i {
-    font-size: 25px;
-    text-align: center;
-}
-
-#imgSec h1 {
-    font-size: 30px;
-    color: #000000;
-    font-family: 'Cairo', sans-serif;
-    font-weight: 600;
-}
-
-#imgSec h5 {
-    background-color: #021E3C;
-    font-size: 16px;
-    line-height: 35px;
-    color: #ffffff;
-    font-family: "Droid Arabic Kufi";
-    text-align: center;
-}
-
-.secImaboveBtn {
-    position: relative;
-}
-
-#videos_Imgs a {
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-
-/***************
+        
+        #videos_Imgs a {
+            font-size: 20px;
+            color: #ffffff;
+            font-family: "Droid Arabic Kufi";
+            font-weight: bold;
+            text-align: center;
+            background-color: #CC8E0F;
+        }
+        
+        #videos_Imgs i {
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        #imgSec h1 {
+            font-size: 30px;
+            color: #000000;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 600;
+        }
+        
+        #imgSec h5 {
+            background-color: #021E3C;
+            font-size: 16px;
+            line-height: 35px;
+            color: #ffffff;
+            font-family: "Droid Arabic Kufi";
+            text-align: center;
+        }
+        
+        .secImaboveBtn {
+            position: relative;
+        }
+        
+        #videos_Imgs a {
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        /***************
 [ END فيديوهات و صور ]
 ***************/
-
-
-/***************
+        /***************
 [ فيديوهات و صور ]
 ***************/
-
-#videos_Imgs a {
-    font-size: 20px;
-    color: #ffffff;
-    font-family: "Droid Arabic Kufi";
-    font-weight: bold;
-    text-align: center;
-    background-color: #CC8E0F;
-}
-
-#videos_Imgs i {
-    font-size: 25px;
-    text-align: center;
-}
-
-#imgSec h1 {
-    font-size: 30px;
-    color: #000000;
-    font-family: 'Cairo', sans-serif;
-    font-weight: 600;
-}
-
-#imgSec h5 {
-    background-color: #021E3C;
-    font-size: 16px;
-    line-height: 35px;
-    color: #ffffff;
-    font-family: "Droid Arabic Kufi";
-    text-align: center;
-}
-
-.secImaboveBtn {
-    position: relative;
-}
-
-#videos_Imgs a {
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-
-/***************
+        
+        #videos_Imgs a {
+            font-size: 20px;
+            color: #ffffff;
+            font-family: "Droid Arabic Kufi";
+            font-weight: bold;
+            text-align: center;
+            background-color: #CC8E0F;
+        }
+        
+        #videos_Imgs i {
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        #imgSec h1 {
+            font-size: 30px;
+            color: #000000;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 600;
+        }
+        
+        #imgSec h5 {
+            background-color: #021E3C;
+            font-size: 16px;
+            line-height: 35px;
+            color: #ffffff;
+            font-family: "Droid Arabic Kufi";
+            text-align: center;
+        }
+        
+        .secImaboveBtn {
+            position: relative;
+        }
+        
+        #videos_Imgs a {
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        /***************
 [ END فيديوهات و صور ]
 ***************/
