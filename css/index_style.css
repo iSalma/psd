@@ -2,75 +2,88 @@
 [ HEADER ]
 ***************/
         
+      @font-face {
+            font-family:'Droid Arabic Kufi Bold';
+            src:URL('../fonts/DroidKufi-Bold.ttf');
+        }
         @font-face {
-            font-family: "Droid Arabic Kufi";
-            src: url("../fonts/DroidKufi-Regular.ttf");
+            font-family:'Droid Arabic Kufi Regular';
+            src:URL('../fonts/DroidKufi-Regular.ttf');
         }
         /***************
 [ ABOVE NAV ]
 ***************/
-        
-        header #above-nav {
-            background-image: url('../images/grey_bg.png');
-            font-size: 13px;
-            color: #20222C;
-            font-family: 'Cairo';
-            position: relative;
-        }
-        
-        header #above-nav button {
-            font-weight: 700;
-        }
-        
-        header #above-nav p,
-        header #above-nav feImage {
-            font-weight: 400;
-        }
-        
-        header #above-nav button {
-            background-color: #F7F8FA;
-        }
-        
-        header #date p,
-        header #date i {
-            margin-top: auto;
-            margin-bottom: auto;
-        }
+        .dateBtnPad
+{
+    padding: 0rem 7rem;
+}
+header #above-nav {
+    background-image: url('../images/grey_bg.png');
+    font-size: 13px;
+    color: #20222C;
+    font-family: 'Cairo';
+    position: relative;
+}
+
+header #above-nav button {
+    font-weight: 700;
+}
+
+header #above-nav p,
+header #above-nav feImage {
+    font-weight: 400;
+}
+
+header #above-nav button {
+    background-color: #F7F8FA;
+}
+
+header #date p,
+header #date i {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+      
+       
         /***************
 [  END ABOVE NAV ]
 ***************/
         /***************
 [ NAV ]
 ***************/
-        
         #realnav {
-            position: absolute;
-            z-index: 9999999;
-            left: 7.5%;
-            bottom: -25%;
-            width: 85%;
-            margin: 0 auto;
-        }
+    position: absolute;
+    z-index: 9999999;
+    left: 7.5%;
+    bottom: -25%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    flex-direction: row-reverse !important;
+    background-image: linear-gradient(rgb(0, 77, 156), rgb(0, 64, 129));
+    width: 100%;
+    border-top: solid 5px #FFEE0D;
+}
+
+.nav-link {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Cairo";
+    font-weight: 400;
+    transition: color 0s;
+}
+
+.nav-link:hover {
+    color: rgb(2, 55, 109);
+}
+.nav-item
+{
+    padding: 0rem 1rem;
+}
         
-        .navbar-nav {
-            margin-left: auto;
-            flex-direction: row-reverse !important;
-            background-image: linear-gradient(rgb(0, 77, 156), rgb(0, 64, 129));
-            width: 100%;
-            border-top: solid 5px #FFEE0D;
-        }
-        
-        .nav-link {
-            font-size: 15px;
-            color: #ffffff;
-            font-family: "Cairo";
-            font-weight: 400;
-            transition: color 0s;
-        }
-        
-        .nav-link:hover {
-            color: rgb(2, 55, 109);
-        }
         /***************
 [ END NAV ]
 ***************/
@@ -78,95 +91,107 @@
 [ BELOW NAV ]
 ***************/
         
-        #below-nav-inner {
-            text-align: center;
-            color: white;
-            font-family: "Droid Arabic Kufi";
-            background-image: url('../images/headK3ba11.png');
-            background-size: 100% 100%;
-            height: 600px;
-        }
         
-        #below-nav-inner .imgtry {
-            background-image: url('../images/headK3ba2.png');
-            background-size: 100% 100%;
-            height: 600px;
-            width: 100%;
-        }
-        
-        #below-nav-inner h1 {
-            font-size: 48px;
-            filter: drop-shadow(0.5px 0.866px 0px #000000);
-            font-weight: bold;
-        }
-        
-        #below-nav-inner h2 {
-            font-size: 26px;
-            filter: drop-shadow(0.5px 0.866px 0px #000000);
-            font-weight: bold;
-        }
-        
-        header .showSlide {
-            display: none
-        }
-        
-        .showSlide img {
-            width: 100%;
-        }
-        
-        header .slidercontainer {
-            margin: auto;
-        }
-        
-        header .left,
-        header .right {
-            cursor: pointer;
-            position: absolute;
-            top: 65%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-        }
-        
-        header .right {
-            right: 100px;
-            border-radius: 3px 0 0 3px;
-        }
-        
-        header .left {
-            left: 100px;
-            border-radius: 3px 0 0 3px;
-        }
-        
-        header.left:hover,
-        header.right:hover {
-            background-color: rgba(115, 115, 115, 0.8);
-        }
-        
-        header.active {
-            background-color: #717171;
-        }
-        
-        header.showSlide {
-            position: relative;
-        }
-        /* Fading animation */
-        
-        header.fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        
-        header .slidercontainer i {
-            font-size: 20px;
-        }
+       
+      #below-nav-inner {
+    text-align: center;
+    color: white;
+    font-family: "Droid Arabic Kufi Bold";
+    font-weight: bold;
+    background-image: url('../images/headK3ba11.png');
+    background-size: 100% 100%;
+    height: 600px;
+}
+
+#below-nav-inner .imgtry {
+    background-image: url('../images/headK3ba2.png');
+    background-size: 100% 100%;
+    height: 600px;
+    width: 100%;
+}
+
+#below-nav-inner h1 {
+    font-size: 48px;
+    filter: drop-shadow(0.5px 0.866px 0px #000000);
+}
+
+#below-nav-inner h2 {
+    font-size: 26px;
+    filter: drop-shadow(0.5px 0.866px 0px #000000);
+}
+
+header .showSlide {
+    display: none
+}
+
+.showSlide img {
+    width: 100%;
+}
+
+header .slidercontainer {
+    margin: auto;
+}
+
+header .left,
+header .right {
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+header .right {
+    right: 100px;
+    border-radius: 3px 0 0 3px;
+}
+header .left {
+    left: 100px;
+    border-radius: 3px 0 0 3px;
+}
+header.left:hover,
+header.right:hover {
+    background-color: rgba(115, 115, 115, 0.8);
+}
+
+header.active {
+    background-color: #717171;
+}
+
+header.showSlide{position: relative;}
+/* Fading animation */
+
+header.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+header .slidercontainer i{
+font-size: 20px;
+}
+header .slidercontainer a{
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    background-color:rgba(255,255,255,0.3);
+    border-radius: 20px;
+    margin-right: 7px; /*space between*/
+
+} header .slidercontainer a i{
+    padding: 12px 11px;
+    font-size: 20px;
+    color: white;
+
+}
+
         /***************
 [ END BELOW NAV ]
 ***************/
