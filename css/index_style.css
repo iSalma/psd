@@ -365,6 +365,7 @@ header .slidercontainer i {
 }
 
 #ourBranches .carousel-indicators li {
+    background-color: yellow;
     width: 67px;
 }
 
