@@ -276,7 +276,6 @@
         @media screen and (max-width: 530px) {
             #whyUs {
                 height: auto;
-                background-color: red;
             }
             #whyUs .whyUsTitle .divP2 {
                 width: 90%;
