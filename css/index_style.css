@@ -324,33 +324,30 @@ header .slidercontainer a{
 /***************
 [ خدماتنا ]
 ***************/
-        
-        #ourServices {}
-        
-        #ourServices .card-img-top img {
-            height: 283px;
-            width: 567px;
-        }
-        
-        #ourServices .card .card-body {
-            background-color: rgb(4, 32, 61);
-            height: 50px;
-        }
-        
-        #ourServices h1 {
-            font-size: 30px;
-            color: #000000;
-            font-family: 'Cairo', sans-serif;
-            font-weight: 600;
-        }
-        
-        #ourServices h5 {
-            background-color: #021E3C;
-            font-size: 16px;
-            line-height: 35px;
-            color: #ffffff;
-            font-family: "Droid Arabic Kufi";
-        }
+     .imgContain
+{
+    overflow: hidden;
+    height: 240px;
+}
+#ourServices .card .card-body {
+    background-color: rgb(4, 32, 61);
+    height: 50px;
+}
+
+#ourServices h1 {
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
+
+#ourServices h5 {
+    background-color: #021E3C;
+    font-size: 16px;
+    line-height: 35px;
+    color: #ffffff;
+    font-family: "Droid Arabic Kufi Regular";
+}
         /***************
 [ END خدماتنا ]
 ***************/
@@ -464,91 +461,173 @@ header .slidercontainer a{
 [ فيديوهات و صور ]
 ***************/
         
-        #videos_Imgs a {
-            font-size: 20px;
-            color: #ffffff;
-            font-family: "Droid Arabic Kufi";
-            font-weight: bold;
-            text-align: center;
-            background-color: #CC8E0F;
-        }
-        
-        #videos_Imgs i {
-            font-size: 25px;
-            text-align: center;
-        }
-        
-        #imgSec h1 {
-            font-size: 30px;
-            color: #000000;
-            font-family: 'Cairo', sans-serif;
-            font-weight: 600;
-        }
-        
-        #imgSec h5 {
-            background-color: #021E3C;
-            font-size: 16px;
-            line-height: 35px;
-            color: #ffffff;
-            font-family: "Droid Arabic Kufi";
-            text-align: center;
-        }
-        
-        .secImaboveBtn {
-            position: relative;
-        }
-        
-        #videos_Imgs a {
-            position: absolute;
-            top: 100%;
-            left: 0;
-        }
+      #videos_Imgs a
+{
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Droid Arabic Kufi Bold";
+    font-weight: bold;
+    text-align: center;
+    background-color: #CC8E0F;
+    margin-top: 1rem !important;
+}
+#videos_Imgs .imgContain
+{
+height: 120px;
+}
+#videos_Imgs i
+{
+    font-size: 25px;
+    text-align: center;
+}
+#imgSec h1
+{
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
+#imgSec h5
+{
+    background-color: #021E3C;
+    font-size: 16px;
+    line-height: 35px;
+    color: #ffffff;     
+    font-family: "Droid Arabic Kufi Regular";
+    text-align: center;
+}
+.ivDirection{flex-direction:row-reverse!important;}
         /***************
 [ END فيديوهات و صور ]
 ***************/
-        /***************
-[ فيديوهات و صور ]
-***************/
-        
-        #videos_Imgs a {
-            font-size: 20px;
-            color: #ffffff;
-            font-family: "Droid Arabic Kufi";
-            font-weight: bold;
-            text-align: center;
-            background-color: #CC8E0F;
-        }
-        
-        #videos_Imgs i {
-            font-size: 25px;
-            text-align: center;
-        }
-        
-        #imgSec h1 {
-            font-size: 30px;
-            color: #000000;
-            font-family: 'Cairo', sans-serif;
-            font-weight: 600;
-        }
-        
-        #imgSec h5 {
-            background-color: #021E3C;
-            font-size: 16px;
-            line-height: 35px;
-            color: #ffffff;
-            font-family: "Droid Arabic Kufi";
-            text-align: center;
-        }
-        
-        .secImaboveBtn {
-            position: relative;
-        }
-        
-        #videos_Imgs a {
-            position: absolute;
-            top: 100%;
-            left: 0;
-        }
-        /***************
-[ END فيديوهات و صور ]
-***************/
+/******Responsive******/
+@media (max-width:994px)
+{
+    .navPX
+    {
+        padding:1.5rem 0rem !important;
+    }
+    .nav-item
+    {
+        padding: 0rem 0.8rem;
+    }
+    .imgContain
+    {
+        height:140px;
+    } 
+    #videos_Imgs .imgContain
+    {
+    height: 80px;
+    }
+#imgSec h5
+{
+   
+    font-size: 12px;
+    line-height: 25px;
+}
+header .right {
+    right: 30px;
+}
+header .left {
+    left: 30px;
+}
+.dateBtnPad
+{
+    padding: 0rem 4rem;
+}
+}
+@media (max-width:890px)and (min-width:768px)
+{
+    .dateBtnPad
+    {
+        padding: 0rem 1rem;
+    }
+}
+@media (max-width:767px)
+{
+    #date
+    { font-size: 0.7rem;}
+    #above-nav button
+    { font-size: 0.9rem;}
+    .dateBtnPad
+    {
+        padding: 0rem 0rem;
+    }
+    header .right {
+        right: 0px;
+    }
+    header .left {
+        left: 0px;
+    }
+    #below-nav-inner h1 {
+        font-size: 35px;
+    }
+    
+    #below-nav-inner h2 {
+        font-size: 17px;
+    }
+    
+    .secImaboveBtn
+    {
+        height: 300px;
+        text-align: center;
+        padding:0rem 0rem 1rem 0rem !important;
+    }
+    #imgSec
+    {
+        padding-bottom:0rem!important;
+        margin-top: 1rem !important;
+    }
+    .btnImgsM
+    {
+        margin-top: 0rem !important;
+    }
+    .paddingService
+    {
+        margin: 1rem 0rem;
+    }
+    .imgContain
+    {
+        height:220px;
+    }
+    
+}
+@media (max-width:490px)
+{
+    .nav-link {
+        font-size: 13px;
+    }    
+    .imgContain
+    {
+        height:170px;
+    }
+}
+@media (max-width:380px)
+{
+    .imgContain
+    {
+        height:145px;
+    }
+    #below-nav-inner h1 {
+        font-size: 30px;
+    }
+    
+    #below-nav-inner h2 {
+        font-size: 15px;
+    }
+}
+@media (max-width:341px)
+{
+    .imgContain
+    {
+        height:120px;
+    }
+    .nav-link {
+        font-size: 10px;
+    }  
+    .nav-item
+{
+    padding: 0rem 0.4rem;
+}
+}
+/****END RESPONSIVE****/
