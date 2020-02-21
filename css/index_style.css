@@ -1,7 +1,10 @@
 /***************
 [ HEADER ]
 ***************/
-
+@font-face {
+    font-family: "Droid Arabic Kufi";
+    src: url("../fonts/DroidKufi-Regular.ttf");
+}
 
 /***************
 [ ABOVE NAV ]
