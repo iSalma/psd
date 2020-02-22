@@ -13,7 +13,7 @@
         /***************
 [ ABOVE NAV ]
 ***************/
-        .dateBtnPad
+.dateBtnPad
 {
     padding: 0rem 7rem;
 }
@@ -42,16 +42,17 @@ header #date p,
 header #date i {
     margin-top: auto;
     margin-bottom: auto;
-}
-      
+}       
+
        
-        /***************
+/***************
 [  END ABOVE NAV ]
 ***************/
         /***************
 [ NAV ]
 ***************/
-        #realnav {
+       
+   #realnav {
     position: absolute;
     z-index: 9999999;
     left: 7.5%;
@@ -70,17 +71,16 @@ header #date i {
 
 .nav-link {
     font-size: 15px;
-    color: #ffffff;
+    color: #ffffff ;
     font-family: "Cairo";
     font-weight: 400;
-    transition: color 0s;
 }
-
-.nav-link:hover {
-    color: rgb(2, 55, 109);
+.nav-item:hover {
+    background-color: rgb(2, 55, 109);
 }
 .nav-item
 {
+    transition: background-color 0s;
     padding: 0rem 1rem;
 }
         
@@ -93,7 +93,8 @@ header #date i {
         
         
        
-      #below-nav-inner {
+     
+#below-nav-inner {
     text-align: center;
     color: white;
     font-family: "Droid Arabic Kufi Bold";
@@ -192,7 +193,11 @@ header .slidercontainer a{
 
 }
 
-        /***************
+
+   
+
+   
+/***************
 [ END BELOW NAV ]
 ***************/
         /***************
@@ -324,7 +329,8 @@ header .slidercontainer a{
 /***************
 [ خدماتنا ]
 ***************/
-     .imgContain
+     
+.imgContain
 {
     overflow: hidden;
     height: 240px;
@@ -348,6 +354,8 @@ header .slidercontainer a{
     color: #ffffff;
     font-family: "Droid Arabic Kufi Regular";
 }
+
+
         /***************
 [ END خدماتنا ]
 ***************/
@@ -460,8 +468,8 @@ header .slidercontainer a{
         /***************
 [ فيديوهات و صور ]
 ***************/
-        
-      #videos_Imgs a
+   
+#videos_Imgs a
 {
     font-size: 15px;
     color: #ffffff;
@@ -497,10 +505,295 @@ height: 120px;
     text-align: center;
 }
 .ivDirection{flex-direction:row-reverse!important;}
-        /***************
+/***************
 [ END فيديوهات و صور ]
 ***************/
+
+
+
+[تصويت وطريقة استعمال ]
+***************/
+.img-contain-text
+{
+    background-color: #ffffff;
+border: 1px solid #e5e9ee;
+text-align: right;
+padding-right: 10px;
+}
+.img-contain
+{
+ background-color:#ffffff;
+border: 1px solid #e5e9ee;
+width: 370px;
+height: 290px;
+}
+
+.img-contain-text h2
+
+{
+    font-weight: 300;
+}
+.btn1
+{
+    
+    border-radius: 8px;
+    background-color: #00a651;
+}
+.btn2
+{
+    border-radius: 8px;
+    background-color: #014489;
+}
+.btns
+{
+    font-size: 11px;
+color: #ffffff;
+font-family: "Cairo";
+font-weight: 700;
+}
+.btnleft
+{
+    text-align: left;
+
+}
+#voteAndHowto input
+{
+width: 18px;
+height: 18px;
+border-radius: 9px;
+filter: drop-shadow(1px 1.732px 0px #b9bcc9);
+background-color: #ffffff;
+border: 1px solid #e5e9ee;
+}
+.img-contain3
+{
+overflow: hidden;
+}
+/***************
+[END تصويت وطريقة استعمال ]
+***************/
+/***************
+[ تواصل معنا ]
+***************/
+
+#sendMsg input::-webkit-input-placeholder
+{
+    color: #B6AB2E;
+    font-size: 12px;
+    line-height: 29px;
+    font-family: "Droid Arabic Kufi Regular";
+    text-align: right;
+    text-indent:0%;
+}
+#sendMsg input::-moz-placeholder
+{
+    color: #B6AB2E;
+    font-size: 12px;
+    line-height: 29px;
+    font-family: "Droid Arabic Kufi Regular";
+    text-align: right;
+    text-indent:0%;
+
+}
+#sendMsg input:-ms-input-placeholder
+{
+    color: #B6AB2E;
+    font-size: 12px;
+    line-height: 29px;
+    font-family: "Droid Arabic Kufi Regular";
+    text-align: right;
+    text-indent:0%;
+
+}
+#sendMsg textarea::-webkit-input-placeholder
+{
+    color: #B6AB2E;
+    font-size: 12px;
+    line-height: 29px;
+    font-family: "Droid Arabic Kufi Regular";
+    text-align: right;
+    text-indent:0%;
+
+}
+#sendMsg textarea:-moz-placeholder
+{
+    color: #B6AB2E;
+    font-size: 12px;
+    line-height: 29px;
+    font-family: "Droid Arabic Kufi Regular";
+    text-align: right;
+}
+#sendMsg textarea::-moz-placeholder
+{
+    color: #B6AB2E;
+    font-size: 12px;
+    line-height: 29px;
+    font-family: "Droid Arabic Kufi Regular";
+    text-align: right;
+}
+#sendMsg textarea:-ms-input-placeholder
+{
+    color: #B6AB2E;
+    font-size: 12px;
+    line-height: 29px;
+    font-family: "Droid Arabic Kufi Regular";
+    text-align: right;
+}
+.contact
+{
+    height: 190px;
+border: 1px solid #e5e9ee;
+}
+.contact1 
+{
+    font-size: 20px;
+    line-height: 29px;
+    color: #a89b00;
+    font-family: "icofont";
+}
+.contactText
+{
+    font-size: 15px;
+line-height: 29px;
+color: #191919;
+font-family: "Droid Arabic Kufi";
+}
+.no
+{
+    font-size: 12px;
+letter-spacing: 1px;
+line-height: 29px;
+color: #191919;
+font-family: "Verdana";
+}
+.data h6
+{
+    
+    font-size: 14px;
+
+color: #191919;
+font-family: "Droid Arabic Kufi";
+}
+
+.facebooc-icon
+{
+    color: #014489;
+    font-size: 30px;
+    margin: 2px;
+}
+
+.tweet
+{
+    border-radius: 3px;
+color: #00aced;
+font-size: 30px;
+margin: 2px;
+}
+.yout
+{
+    border-radius: 3px;
+    color:#bb0000;
+    font-size: 30px ; margin: 2px;
+
+}
+.insta
+{width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #bc2a8d;
+    color: #ffffff;
+    font-size: 28px  ;
+    margin: 2px;
+    
+}
+.snab
+{
+ 
+    border-radius: 3px;
+    color:#dedb02;
+    font-size: 30px ;
+    margin: 2px; 
+
+}
+#sendMsg button
+{
+    font-size: 12px;
+line-height: 29px;
+color: white;
+background-color: #A89B00;
+font-family: "Droid Arabic Kufi Bold";
+}
+#sendMsg textarea::placeholder
+{
+    padding:15px 10px;
+}
+#contactUs
+{
+    background-image: url("../images/rec.png");
+    background-size: 100% 100% !important;
+    height: auto;
+    
+}
+footer
+{
+    background-color: #BBBED2;
+}
+footer p
+{
+    font-size: 13px;
+line-height: 29px;
+color: #191919;
+font-family: "Cairo";
+font-weight: 400;
+}
+footer h1
+{
+    font-size: 15px;
+line-height: 4px;
+color: #242425;
+font-family: "Droid Arabic Kufi Bold";
+text-align: left;
+}
+footer h2
+{
+    font-size: 10px;
+line-height: 4px;
+color: #3B3C40;
+font-family: "04b08";
+text-align: left;
+}
+/***************
+[ END تواصل معنا ]
+***************/
+
+
+
+
+
 /******Responsive******/
+
+@media (max-width:1200px)
+{
+    .img-contain
+    {
+        width: 100%;
+    }
+    .img-contain3
+    {
+        text-align: center !important;
+    }
+    .img-contain-text h2
+    {
+        font-size: 1.5rem !important;
+        font-weight: 300;
+    }
+    .img-contain-text h1
+    {
+        font-size: 2.3rem !important;
+        font-weight: 300;
+    }
+
+}
 @media (max-width:994px)
 {
     .navPX
@@ -630,4 +923,5 @@ header .left {
     padding: 0rem 0.4rem;
 }
 }
+
 /****END RESPONSIVE****/
